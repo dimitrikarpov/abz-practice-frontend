@@ -1,0 +1,49 @@
+@import-normalize;
+@import url('https://fonts.googleapis.com/css?family=Overpass:600|Source+Sans+Pro:400,700&display=swap');
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Typography */
+
+h1 {
+  font-family: 'Overpass', sans-serif;
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 600;
+}
+
+h2 {
+  font-family: 'Overpass', sans-serif;
+  font-size: 42px;
+  line-height: 51px;
+  font-weight: 600;
+}
+
+h3 {
+  font-family: 'Overpass', sans-serif;
+  font-size: 26px;
+  line-height: 31px;
+  font-weight: 600;
+}
+
+h4 {
+  font-family: 'Overpass', sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 600;
+}
+
+h5 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.App {
+  text-align: center;
+  background: lightblue;
+  width: 1024px;
+}
