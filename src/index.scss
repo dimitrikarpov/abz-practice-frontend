@@ -1,6 +1,11 @@
 @import-normalize;
 @import url('https://fonts.googleapis.com/css?family=Overpass:600|Source+Sans+Pro:400,700&display=swap');
 
+$colors: (
+  primary: #ef6c00,
+  secondary: #285393,
+);
+
 * {
   margin: 0;
   padding: 0;
@@ -52,6 +57,43 @@ h5 {
   text-align: center;
   width: 1024px;
   margin: 0 auto;
+}
+
+/* button */
+.btn {
+  padding: 5px 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: Source Sans Pro;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 60px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: map-get($colors, primary);
+
+  &:hover {
+    background-color: #f2811e;
+  }
+}
+
+.btn-secondary {
+  color: map-get($colors, primary);
+  background-color: #fff;
+  border: 1px solid map-get($colors, primary);
+
+  &:hover {
+    background-color: #fde6d2;
+    color: #f2811e;
+  }
+}
+
+.btn-disabled {
+  background-color: #d7d7d7;
+  color: #8d8c8c;
 }
 
 /* header */
@@ -112,4 +154,36 @@ h5 {
   height: 42px;
   border-radius: 50%;
   margin: 0 10px;
+}
+
+/* banner  */
+#banner {
+  height: 730px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-image: url(./assets/imgs/bg-1.jpg);
+  background-size: 130%;
+  color: #fff;
+  padding-left: 50px;
+  text-align: left;
+}
+
+.banner__title {
+  line-height: 65px;
+  margin-bottom: 15px;
+  padding-top: 90px;
+}
+
+.banner__text {
+  padding-right: 50px;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.banner__button {
+  margin-top: 28px;
+
+  a {
+    padding: 10px 115px;
+  }
 }
