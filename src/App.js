@@ -3,6 +3,9 @@ import HeaderLogo from './assets/logo/logo.svg'
 import SuperstarAvatar from './assets/imgs/user-superstar-2x.jpg'
 import SignOutIcon from './assets/icons/sign-out.svg'
 import AboutImg from './assets/imgs/man-mobile.svg'
+import JSImage from './assets/imgs/javascript.svg'
+import CSSImage from './assets/imgs/css.svg'
+import HTMLImage from './assets/imgs/html.svg'
 
 function App() {
   return (
@@ -59,7 +62,7 @@ function App() {
             </a>
           </div>
         </div>
-        <div className="banner-right" />
+        <div className="banner-right">{''}</div>
       </section>
 
       <section id="about">
@@ -82,6 +85,38 @@ function App() {
               initiatives to help improve user-experience on the web.
             </p>
             <a href="#">Sign Up</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="relationships">
+        <h2>About my relationships with  web-development</h2>
+        <div className="relationships__items">
+          <div className="relationships__item">
+            <img src={HTMLImage} alt="html" />
+            <h3>I'm in love with HTML</h3>
+            <p>
+              Hypertext Markup Language (HTML) is the standard markup language
+              for creating web pages and web applications.
+            </p>
+          </div>
+          <div className="relationships__item">
+            <img src={CSSImage} alt="css" />
+            <h3>CSS is my best friend</h3>
+            <p>
+              Cascading Style Sheets (CSS)  is a style sheet language used for
+              describing the presentation of a document written in a markup
+              language like HTML.
+            </p>
+          </div>
+          <div className="relationships__item">
+            <img src={JSImage} alt="js" />
+            <h3>JavaScript is my passion</h3>
+            <p>
+              JavaScript is a high-level, interpreted programming language. It
+              is a language which is also characterized as dynamic, weakly
+              typed, prototype-based and multi-paradigm.
+            </p>
           </div>
         </div>
       </section>
