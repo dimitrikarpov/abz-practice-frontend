@@ -7,6 +7,7 @@ import JSImage from './assets/imgs/javascript.svg'
 import CSSImage from './assets/imgs/css.svg'
 import HTMLImage from './assets/imgs/html.svg'
 import RequirementsImage from './assets/imgs/man-laptop-v1.svg'
+import UserElizImage from './assets/imgs/user-elizabeth-2x.jpg'
 
 function App() {
   return (
@@ -151,6 +152,68 @@ function App() {
           </div>
           <img src={RequirementsImage} alt="requirements image"/>
         </div>
+      </section>
+
+      <section id="users">
+        <h2>Our cheerful users</h2>
+        <h5>Attention! Sorting users by registration date</h5>
+        <div className="users-grid">
+          <div className="users__card">
+            <img src={UserElizImage} alt="user"/>
+            <div className="user__info">
+              <h4>Elizabeth</h4>
+              <p>Leading specialist of the Control Department</p>
+              <p>noah.controldepartment@gmail...</p>
+              <p>+38 (095) 924 66 37</p>
+            </div>
+          </div>
+          <div className="users__card">
+            <img src={UserElizImage} alt="user"/>
+            <div className="user__info">
+              <h4>Elizabeth</h4>
+              <p>Leading specialist of the Control Department</p>
+              <p>noah.controldepartment@gmail...</p>
+              <p>+38 (095) 924 66 37</p>
+            </div>
+          </div>
+          <div className="users__card">
+            <img src={UserElizImage} alt="user"/>
+            <div className="user__info">
+              <h4>Elizabeth</h4>
+              <p>Leading specialist of the Control Department</p>
+              <p>noah.controldepartment@gmail...</p>
+              <p>+38 (095) 924 66 37</p>
+            </div>
+          </div>
+          <div className="users__card">
+            <img src={UserElizImage} alt="user"/>
+            <div className="user__info">
+              <h4>Elizabeth</h4>
+              <p>Leading specialist of the Control Department</p>
+              <p>noah.controldepartment@gmail...</p>
+              <p>+38 (095) 924 66 37</p>
+            </div>
+          </div>
+          <div className="users__card">
+            <img src={UserElizImage} alt="user"/>
+            <div className="user__info">
+              <h4>Elizabeth</h4>
+              <p>Leading specialist of the Control Department</p>
+              <p>noah.controldepartment@gmail...</p>
+              <p>+38 (095) 924 66 37</p>
+            </div>
+          </div>
+          <div className="users__card">
+            <img src={UserElizImage} alt="user"/>
+            <div className="user__info">
+              <h4>Elizabeth</h4>
+              <p>Leading specialist of the Control Department</p>
+              <p>noah.controldepartment@gmail...</p>
+              <p>+38 (095) 924 66 37</p>
+            </div>
+          </div>
+        </div>
+        <a href="#" className="btn btn-secondary">Show more</a>
       </section>
     </div>
   )

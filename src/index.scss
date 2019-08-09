@@ -301,3 +301,42 @@ section {
     line-height: 22px;
   }
 }
+
+/* users */
+#users {
+  padding-top: 140px;
+  padding-bottom: 70px;
+
+  h5 {
+    margin-top: 10px;
+  }
+}
+
+.users-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 99px;
+  padding-top: 48px;
+  padding-bottom: 20px;
+}
+
+.users__card {
+  display: flex;
+
+  img {
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+  }
+}
+
+.user__info {
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 34px;
+
+  p {
+    color: #646363;
+  }
+}
