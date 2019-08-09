@@ -53,6 +53,32 @@ h5 {
   line-height: 21px;
 }
 
+/* form */
+/** input **/
+.form-input {
+  padding: 1rem;
+  position: relative;
+}
+
+.form-input input {
+  border: 1px solid #b7b7b7;
+  border-radius: 3px;
+  font-size: 20px;
+  padding: 0.7rem;
+  width: 100%;
+  color: #b7b7b7;
+}
+
+.form-input span {
+  position: absolute;
+  top: 0.4rem;
+  left: 1.7rem;
+  background-color: white;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  color: #b7b7b7;
+}
+
 .App {
   text-align: center;
   width: 1024px;
@@ -338,5 +364,30 @@ section {
 
   p {
     color: #646363;
+  }
+}
+
+#sign-up {
+  margin-bottom: 70px;
+
+  h2 {
+    margin-bottom: 17px;
+  }
+}
+
+.form-grid {
+  padding-top: 50px;
+  padding-bottom: 53px;
+}
+
+.form__row {
+  display: grid;
+
+  &:nth-child(1) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  &:nth-child(2) {
+    grid-template-columns: 1fr 1fr;
   }
 }

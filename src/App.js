@@ -124,7 +124,9 @@ function App() {
       </section>
 
       <section id="requirements">
-        <h2 className="requirements__title">General requirements for the test task</h2>
+        <h2 className="requirements__title">
+          General requirements for the test task
+        </h2>
         <div className="requirements__wrapper">
           <div className="requirements__text">
             <p>
@@ -150,7 +152,7 @@ function App() {
               conditions.
             </p>
           </div>
-          <img src={RequirementsImage} alt="requirements image"/>
+          <img src={RequirementsImage} alt="requirements image" />
         </div>
       </section>
 
@@ -159,7 +161,7 @@ function App() {
         <h5>Attention! Sorting users by registration date</h5>
         <div className="users-grid">
           <div className="users__card">
-            <img src={UserElizImage} alt="user"/>
+            <img src={UserElizImage} alt="user" />
             <div className="user__info">
               <h4>Elizabeth</h4>
               <p>Leading specialist of the Control Department</p>
@@ -168,7 +170,7 @@ function App() {
             </div>
           </div>
           <div className="users__card">
-            <img src={UserElizImage} alt="user"/>
+            <img src={UserElizImage} alt="user" />
             <div className="user__info">
               <h4>Elizabeth</h4>
               <p>Leading specialist of the Control Department</p>
@@ -177,7 +179,7 @@ function App() {
             </div>
           </div>
           <div className="users__card">
-            <img src={UserElizImage} alt="user"/>
+            <img src={UserElizImage} alt="user" />
             <div className="user__info">
               <h4>Elizabeth</h4>
               <p>Leading specialist of the Control Department</p>
@@ -186,7 +188,7 @@ function App() {
             </div>
           </div>
           <div className="users__card">
-            <img src={UserElizImage} alt="user"/>
+            <img src={UserElizImage} alt="user" />
             <div className="user__info">
               <h4>Elizabeth</h4>
               <p>Leading specialist of the Control Department</p>
@@ -195,7 +197,7 @@ function App() {
             </div>
           </div>
           <div className="users__card">
-            <img src={UserElizImage} alt="user"/>
+            <img src={UserElizImage} alt="user" />
             <div className="user__info">
               <h4>Elizabeth</h4>
               <p>Leading specialist of the Control Department</p>
@@ -204,7 +206,7 @@ function App() {
             </div>
           </div>
           <div className="users__card">
-            <img src={UserElizImage} alt="user"/>
+            <img src={UserElizImage} alt="user" />
             <div className="user__info">
               <h4>Elizabeth</h4>
               <p>Leading specialist of the Control Department</p>
@@ -213,7 +215,46 @@ function App() {
             </div>
           </div>
         </div>
-        <a href="#" className="btn btn-secondary">Show more</a>
+        <a href="#" className="btn btn-secondary">
+          Show more
+        </a>
+      </section>
+
+      <section id="sign-up">
+        <h2>Register to get a work</h2>
+        <h5>
+          Attention! After successful registration and alert, update the list of
+          users in the block from the top
+        </h5>
+        <div className="form-grid">
+          <div className="form__row">
+            <div className="form-input">
+              <input type="text" name="test" placeholder="test" />
+              <span>label</span>
+            </div>
+            <div className="form-input">
+              <input type="text" name="test" placeholder="test" />
+              <span>label</span>
+            </div>
+            <div className="form-input">
+              <input type="text" name="test" placeholder="test" />
+              <span>label</span>
+            </div>
+          </div>
+          <div className="form__row">
+            <div className="form-input">
+              <input type="text" name="test" placeholder="test" />
+              <span>label</span>
+            </div>
+            <div className="form-input">
+              <input type="text" name="test" placeholder="test" />
+              <span>label</span>
+            </div>
+          </div>
+          <a href="#" className="btn btn-disabled">
+            Sign Up
+          </a>
+        </div>
       </section>
     </div>
   )
