@@ -91,7 +91,7 @@ p {
 
 .App {
   text-align: center;
-  width: 1024px;
+  max-width: 1024px;
   margin: 0 auto;
 }
 
@@ -141,7 +141,7 @@ section {
 }
 
 /* header */
-#header {
+header {
   display: flex;
   align-items: center;
   height: 6.4rem;

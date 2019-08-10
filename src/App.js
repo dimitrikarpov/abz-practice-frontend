@@ -20,7 +20,7 @@ import TwitterIcon from './assets/icons/twitter.svg'
 function App() {
   return (
     <div className="App">
-      <section id="header">
+      <header>
         <img className="header__logo" src={HeaderLogo} alt="logo" />
         <nav className="header__nav">
           <ul>
@@ -53,7 +53,7 @@ function App() {
           />
           <img src={SignOutIcon} alt="sign out" className="header__sign-out" />
         </div>
-      </section>
+      </header>
 
       <section id="banner">
         <div className="banner-left">
