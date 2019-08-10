@@ -538,3 +538,34 @@ footer {
     margin-left: 2.6rem;
   }
 }
+
+@media (min-width: 1024px) {
+  .App {
+    width: 100%;
+    max-width: 2560px;
+  }
+
+  section,
+  header,
+  footer {
+    width: 100%;
+    max-width: unset;
+    padding-left: calc((100vw - 1024px)/2);
+    padding-right: calc((100vw - 1024px) /2);
+  }
+}
+
+@media (min-width: 2560px) {
+  .App {
+    width: 2560px;
+  }
+
+  section,
+  header,
+  footer {
+    width: 100%;
+    padding-left: calc((2560px - 1170px)/2);
+    padding-right: calc((2560px - 1170px) /2);
+
+  }
+}
