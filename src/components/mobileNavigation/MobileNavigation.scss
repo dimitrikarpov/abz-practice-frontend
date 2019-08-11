@@ -20,6 +20,8 @@
   .side-drawer__user,
   .side-drawer__nav {
     padding-left: 2.5rem;
+    display: flex;
+    align-items: center;
   }
 
   .side-drawer__user {

@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './MobileNavigation.scss'
 import Portal from '../Portal'
+import UserInfo from '../userInfo/UserInfo'
 import Navigation from '../navigation/Navigation'
 
 const MobileNavigation = ({ visible, onClose }) => {
@@ -15,7 +16,9 @@ const MobileNavigation = ({ visible, onClose }) => {
         <Portal>
           <div className="backdrop" onClick={handleOnClose}>
             <div className="side-drawer">
-              <div className="side-drawer__user">user</div>
+              <div className="side-drawer__user">
+                  <UserInfo/>
+              </div>
               <div className="side-drawer__nav">
                 <Navigation variant="vertical" />
               </div>

@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
 import HeaderLogo from './assets/logo/logo.svg'
-import SuperstarAvatar from './assets/imgs/user-superstar-2x.jpg'
-import SignOutIcon from './assets/icons/sign-out.svg'
 import AboutImg from './assets/imgs/man-mobile.svg'
 import JSImage from './assets/imgs/javascript.svg'
 import CSSImage from './assets/imgs/css.svg'
@@ -19,6 +17,7 @@ import TwitterIcon from './assets/icons/twitter.svg'
 import MenuIcon from './assets/icons/line-menu.svg'
 import Navigation from './components/navigation/Navigation'
 import MobileNavigation from './components/mobileNavigation/MobileNavigation'
+import UserInfo from './components/userInfo/UserInfo'
 
 function App() {
   const [sideDraw, setSideDraw] = useState(false)
@@ -32,21 +31,10 @@ function App() {
       <header>
         <img className="header__logo" src={HeaderLogo} alt="logo" />
         <Navigation />
-        <div className="header__user">
-          <div className="header__user-info">
-            <p className="header__user-name">Superstar</p>
-            <p className="header__user-email">Superstar@gmail.com</p>
-          </div>
-          <img
-            src={SuperstarAvatar}
-            alt="avatar"
-            className="header__user-avatar"
-          />
-          <img src={SignOutIcon} alt="sign out" className="header__sign-out" />
-        </div>
+        <UserInfo/>
         <img
           src={MenuIcon}
-          className="header__menu-icon"
+          className="nav-icon"
           onClick={toggleSideDraw}
           alt="menu"
         />
