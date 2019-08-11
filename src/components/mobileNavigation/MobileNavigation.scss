@@ -1,0 +1,37 @@
+.backdrop {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.side-drawer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 26rem;
+  height: 100%;
+  z-index: 15;
+  background-color: #fff;
+
+  .side-drawer__user,
+  .side-drawer__nav {
+    padding-left: 2.5rem;
+  }
+
+  .side-drawer__user {
+    border-bottom: 1px solid #e1e1e1;
+    height: 17rem;
+  }
+
+  .side-drawer__nav {
+    padding-top: 3.5rem;
+
+    nav {
+      height: 23rem;
+    }
+  }
+}

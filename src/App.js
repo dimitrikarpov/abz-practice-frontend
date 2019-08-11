@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import HeaderLogo from './assets/logo/logo.svg'
 import SuperstarAvatar from './assets/imgs/user-superstar-2x.jpg'
 import SignOutIcon from './assets/icons/sign-out.svg'
@@ -16,31 +16,22 @@ import InstagramIcon from './assets/icons/instagram.svg'
 import LinkedinIcon from './assets/icons/linkedin.svg'
 import PinterestIcon from './assets/icons/pinterest.svg'
 import TwitterIcon from './assets/icons/twitter.svg'
+import MenuIcon from './assets/icons/line-menu.svg'
+import Navigation from './components/navigation/Navigation'
+import MobileNavigation from './components/mobileNavigation/MobileNavigation'
 
 function App() {
+  const [sideDraw, setSideDraw] = useState(false)
+
+  const toggleSideDraw = () => {
+    setSideDraw(!sideDraw)
+  }
+
   return (
     <div className="App">
       <header>
         <img className="header__logo" src={HeaderLogo} alt="logo" />
-        <nav className="header__nav">
-          <ul>
-            <li>
-              <a href="#">About Me</a>
-            </li>
-            <li>
-              <a href="#">Relationships</a>
-            </li>
-            <li>
-              <a href="#">Requirements</a>
-            </li>
-            <li>
-              <a href="#">Users</a>
-            </li>
-            <li>
-              <a href="#">Sign Up</a>
-            </li>
-          </ul>
-        </nav>
+        <Navigation />
         <div className="header__user">
           <div className="header__user-info">
             <p className="header__user-name">Superstar</p>
@@ -53,6 +44,12 @@ function App() {
           />
           <img src={SignOutIcon} alt="sign out" className="header__sign-out" />
         </div>
+        <img
+          src={MenuIcon}
+          className="header__menu-icon"
+          onClick={toggleSideDraw}
+          alt="menu"
+        />
       </header>
 
       <section id="banner">
@@ -268,25 +265,7 @@ function App() {
       <footer>
         <div className="footer__top">
           <span className="logo" />
-          <nav>
-            <ul>
-              <li>
-                <a href="#">About Me</a>
-              </li>
-              <li>
-                <a href="#">Relationships</a>
-              </li>
-              <li>
-                <a href="#">Requirements</a>
-              </li>
-              <li>
-                <a href="#">Users</a>
-              </li>
-              <li>
-                <a href="#">Sign Up</a>
-              </li>
-            </ul>
-          </nav>
+          <Navigation variant="white" />
         </div>
         <div className="footer__bottom">
           <div className="footer__email">
@@ -356,6 +335,8 @@ function App() {
           </div>
         </div>
       </footer>
+
+      <MobileNavigation visible={sideDraw} onClose={toggleSideDraw}/>
     </div>
   )
 }
