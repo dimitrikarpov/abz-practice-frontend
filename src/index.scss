@@ -165,34 +165,6 @@ header {
   }
 }
 
-// .header__user-info {
-//   text-align: right;
-// }
-
-// .header__user {
-//   display: flex;
-//   align-items: center;
-//   margin-left: 4rem;
-// }
-
-// .header__user-name {
-//   font-size: 14px;
-//   color: #000;
-//   margin-bottom: 0.4rem;
-// }
-
-// .header__user-email {
-//   font-size: 12px;
-//   color: #8d8c8c;
-// }
-
-// .header__user-avatar {
-//   width: 4.2rem;
-//   height: 4.2rem;
-//   border-radius: 50%;
-//   margin: 0 1rem;
-// }
-
 /* banner  */
 #banner {
   height: 73rem;
@@ -321,10 +293,18 @@ header {
 .requirements__text {
   text-align: left;
   padding-right: 4.7rem;
+  width: 50%;
 
   p {
     margin-bottom: 2.2rem;
   }
+}
+
+.requirements__image {
+  background-image: url(./assets/imgs/man-laptop-v1.svg);
+  width: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 /* users */
@@ -360,6 +340,7 @@ header {
   text-align: left;
   padding-left: 1rem;
   padding-top: 3.4rem;
+  width: 20rem;
 
   p {
     color: #646363;
@@ -525,6 +506,14 @@ footer {
 }
 
 @media (max-width: 770px) {
+  /* typography */
+  h1 {
+    font-family: 'Overpass', sans-serif;
+    font-size: 42px;
+    line-height: 51px;
+    font-weight: 600;
+  }
+
   .App {
     max-width: 770px;
   }
@@ -534,11 +523,85 @@ footer {
     display: none;
   }
 
+  header,
+  .footer__top,
+  .footer__bottom,
+  section {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
   header {
     justify-content: space-between;
 
     .nav-icon {
       display: block;
+    }
+  }
+
+  #banner {
+    grid-template-columns: 68% 1fr;
+  }
+
+  #relationships {
+    h2 {
+      padding: 0 8rem;
+    }
+  }
+
+  .relationships__items {
+    grid-template-columns: 1fr;
+  }
+
+  .relationships__item {
+    display: flex;
+
+    img {
+      padding-bottom: 4.3rem;
+      padding-right: 3rem;
+      padding-left: 3rem;
+    }
+  }
+
+  #requirements {
+    h2 {
+      padding-left: 11.5rem;
+      padding-right: 11.5rem;
+    }
+    .requirements__text {
+      padding-right: 1.7rem;
+      width: 52%;
+    }
+
+    .requirements__image {
+      background-image: url(./assets/imgs/man-laptop-v2.svg);
+    }
+  }
+
+  #users {
+    .users-grid {
+      row-gap: 3.5rem;
+    }
+
+    .users__card {
+      flex-direction: column;
+
+      img {
+        margin: 0 auto;
+      }
+    }
+
+    .user__info {
+      text-align: center;
+      padding-left: 0;
+      padding-top: 1.5rem;
+    }
+  }
+
+  footer {
+    .footer__email .footer__email-icon,
+    .footer__phones .footer__phones-item .footer__phones-icon {
+      display: none;
     }
   }
 }

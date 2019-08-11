@@ -4,7 +4,7 @@ import AboutImg from './assets/imgs/man-mobile.svg'
 import JSImage from './assets/imgs/javascript.svg'
 import CSSImage from './assets/imgs/css.svg'
 import HTMLImage from './assets/imgs/html.svg'
-import RequirementsImage from './assets/imgs/man-laptop-v1.svg'
+// import RequirementsImage from './assets/imgs/man-laptop-v1.svg'
 import UserElizImage from './assets/imgs/user-elizabeth-2x.jpg'
 import MailIcon from './assets/icons/mail.svg'
 import PhoneIcon from './assets/icons/phone.svg'
@@ -31,7 +31,7 @@ function App() {
       <header>
         <img className="header__logo" src={HeaderLogo} alt="logo" />
         <Navigation />
-        <UserInfo/>
+        <UserInfo />
         <img
           src={MenuIcon}
           className="nav-icon"
@@ -89,29 +89,35 @@ function App() {
         <div className="relationships__items">
           <div className="relationships__item">
             <img src={HTMLImage} alt="html" />
-            <h3>I'm in love with HTML</h3>
-            <p>
-              Hypertext Markup Language (HTML) is the standard markup language
-              for creating web pages and web applications.
-            </p>
+            <div className="relationships__info">
+              <h3>I'm in love with HTML</h3>
+              <p>
+                Hypertext Markup Language (HTML) is the standard markup language
+                for creating web pages and web applications.
+              </p>
+            </div>
           </div>
           <div className="relationships__item">
             <img src={CSSImage} alt="css" />
-            <h3>CSS is my best friend</h3>
-            <p>
-              Cascading Style Sheets (CSS)  is a style sheet language used for
-              describing the presentation of a document written in a markup
-              language like HTML.
-            </p>
+            <div className="relationships__info">
+              <h3>CSS is my best friend</h3>
+              <p>
+                Cascading Style Sheets (CSS)  is a style sheet language used for
+                describing the presentation of a document written in a markup
+                language like HTML.
+              </p>
+            </div>
           </div>
           <div className="relationships__item">
             <img src={JSImage} alt="js" />
-            <h3>JavaScript is my passion</h3>
-            <p>
-              JavaScript is a high-level, interpreted programming language. It
-              is a language which is also characterized as dynamic, weakly
-              typed, prototype-based and multi-paradigm.
-            </p>
+            <div className="relationships__info">
+              <h3>JavaScript is my passion</h3>
+              <p>
+                JavaScript is a high-level, interpreted programming language. It
+                is a language which is also characterized as dynamic, weakly
+                typed, prototype-based and multi-paradigm.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -145,7 +151,7 @@ function App() {
               conditions.
             </p>
           </div>
-          <img src={RequirementsImage} alt="requirements image" />
+          <div className="requirements__image"></div>
         </div>
       </section>
 
@@ -324,7 +330,7 @@ function App() {
         </div>
       </footer>
 
-      <MobileNavigation visible={sideDraw} onClose={toggleSideDraw}/>
+      <MobileNavigation visible={sideDraw} onClose={toggleSideDraw} />
     </div>
   )
 }
