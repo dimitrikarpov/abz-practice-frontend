@@ -1,0 +1,62 @@
+.input-field {
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.select-wrapper {
+  text-align: left;
+  margin: 1rem;
+}
+
+.input {
+  min-width: 20rem;
+  width: 100%;
+  border: 1px solid #B7B7B7;
+  border-radius: 4px;
+  padding: 0.5rem;
+  font-size: 2rem;
+  padding: 0.7rem;
+  cursor: pointer;
+}
+
+.icon {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+}
+
+.label {
+  position: absolute;
+  top: 0.5rem;
+  left: 2rem;
+  background: #fff;
+  padding: 0 0.3rem;
+  color: #B7B7B7;
+}
+
+.options {
+  list-style-type: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #fff;
+  display: none;
+  box-shadow: 0px 5px 7px 1px rgba(224, 224, 224, 1);
+}
+
+.visible {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: block;
+}
+
+.option {
+  padding: 1rem 2rem;
+}
+
+.option:hover {
+  background-color: #fce2cc;
+}

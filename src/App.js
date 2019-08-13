@@ -4,7 +4,6 @@ import AboutImg from './assets/imgs/man-mobile.svg'
 import JSImage from './assets/imgs/javascript.svg'
 import CSSImage from './assets/imgs/css.svg'
 import HTMLImage from './assets/imgs/html.svg'
-// import RequirementsImage from './assets/imgs/man-laptop-v1.svg'
 import UserElizImage from './assets/imgs/user-elizabeth-2x.jpg'
 import MailIcon from './assets/icons/mail.svg'
 import PhoneIcon from './assets/icons/phone.svg'
@@ -18,6 +17,7 @@ import MenuIcon from './assets/icons/line-menu.svg'
 import Navigation from './components/navigation/Navigation'
 import MobileNavigation from './components/mobileNavigation/MobileNavigation'
 import UserInfo from './components/userInfo/UserInfo'
+import Select from './components/form/select/Select'
 
 function App() {
   const [sideDraw, setSideDraw] = useState(false)
@@ -47,9 +47,12 @@ function App() {
           </h1>
           <p className="banner__text">
             We kindly remind you that your test assignment should be submitted
-            as a link to github/bitbucket repository. <span>Please be patient, we
-            consider and respond to every application that meets minimum
-            requirements. We look forward to your submission. Good luck!</span>
+            as a link to github/bitbucket repository.{' '}
+            <span>
+              Please be patient, we consider and respond to every application
+              that meets minimum requirements. We look forward to your
+              submission. Good luck!
+            </span>
           </p>
           <div className="banner__button">
             <a href="#" className="btn btn-primary">
@@ -151,7 +154,7 @@ function App() {
               conditions.
             </p>
           </div>
-          <div className="requirements__image"></div>
+          <div className="requirements__image" />
         </div>
       </section>
 
