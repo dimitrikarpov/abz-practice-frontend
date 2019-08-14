@@ -1,0 +1,44 @@
+.upload {
+  position: relative;
+  padding: 10px;
+}
+
+.upload__input {
+  outline: none;
+  width: 100%;
+}
+
+.upload__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  background: #fff;
+  width: 100%;
+}
+
+.upload___wrapper--title {
+  border-top: 1px solid #b7b7b7;
+  border-left: 1px solid #b7b7b7;
+  border-bottom: 1px solid #b7b7b7;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  width: 100%;
+}
+
+.upload__wrapper--button {
+  border: 2px solid #ef6c0b;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.upload__title {
+  width: 5rem;
+  margin: 1rem 2rem;
+}
+
+.upload__button {
+  margin: 1rem 2rem;
+  width: 115px;
+  color: #ef6c0b;
+}

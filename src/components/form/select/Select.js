@@ -3,19 +3,29 @@ import PropTypes from 'prop-types'
 import classes from './Select.module.scss'
 import CaretIcon from '../../../assets/icons/caret-down.svg'
 
-const Select = () => {
+const Select = ({ options, value, onChange }) => {
   const [visible, setVisible] = useState(false)
 
-  const selectOption = key => {
+  const onSelect = id => {
     setVisible(!visible)
-    console.log(key)
+    onChange(id)
   }
 
   const toggleOptions = () => {
     setVisible(!visible)
   }
 
-  const optionClasses = visible ? [classes['options'], classes['visible']] : [classes['options']]
+  const dropdownClasses = visible
+    ? [classes['options'], classes['visible']]
+    : [classes['options']]
+
+  let activeItem = options.filter(item => item.id === value)[0]
+
+  const getOptionClasses = id => {
+    return activeItem !== undefined && activeItem.id === id
+      ? [classes['option'], classes['active']]
+      : [classes['option']]
+  }
 
   return (
     <div className={classes['input-field']}>
@@ -24,15 +34,20 @@ const Select = () => {
           className={classes['input']}
           type="text"
           onClick={toggleOptions}
+          value={activeItem ? activeItem.name : ''}
         />
-        <img src={CaretIcon} className={classes['icon']}/>
-        <ul className={optionClasses.join(' ')}>
-          <li className={classes['option']} onClick={() => selectOption(1)}>
-            first value
-          </li>
-          <li className={classes['option']} onClick={() => selectOption(2)}>
-            second value
-          </li>
+        <img src={CaretIcon} className={classes['icon']} />
+        <ul className={dropdownClasses.join(' ')}>
+          {/* <li className={classes['option']}>Choose</li> */}
+          {options.map(({ id, name }) => (
+            <li
+              key={id}
+              className={getOptionClasses(id).join(' ')}
+              onClick={() => onSelect(id)}
+            >
+              {name}
+            </li>
+          ))}
         </ul>
       </div>
       <label className={classes['label']}>select</label>
@@ -42,8 +57,13 @@ const Select = () => {
 
 export default Select
 
+Select.defaultProps = {
+  options: [],
+  value: false,
+}
+
 Select.propTypes = {
-    options: PropTypes.array.isRequired,
-    active: PropTypes.string,
-    onChange: PropTypes.func.isRequired,
+  options: PropTypes.array.isRequired,
+  value: PropTypes.string,
+  onChange: PropTypes.func.isRequired,
 }

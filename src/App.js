@@ -17,7 +17,8 @@ import MenuIcon from './assets/icons/line-menu.svg'
 import Navigation from './components/navigation/Navigation'
 import MobileNavigation from './components/mobileNavigation/MobileNavigation'
 import UserInfo from './components/userInfo/UserInfo'
-import Select from './components/form/select/Select'
+import SignUp from './components/signUp/SignUp'
+
 
 function App() {
   const [sideDraw, setSideDraw] = useState(false)
@@ -222,42 +223,7 @@ function App() {
         </a>
       </section>
 
-      <section id="sign-up">
-        <h2>Register to get a work</h2>
-        <h5>
-          Attention! After successful registration and alert, update the list of
-          users in the block from the top
-        </h5>
-        <div className="form-grid">
-          <div className="form__row">
-            <div className="form-input">
-              <input type="text" name="test" placeholder="test" />
-              <span>label</span>
-            </div>
-            <div className="form-input">
-              <input type="text" name="test" placeholder="test" />
-              <span>label</span>
-            </div>
-            <div className="form-input">
-              <input type="text" name="test" placeholder="test" />
-              <span>label</span>
-            </div>
-          </div>
-          <div className="form__row">
-            <div className="form-input">
-              <input type="text" name="test" placeholder="test" />
-              <span>label</span>
-            </div>
-            <div className="form-input">
-              <input type="text" name="test" placeholder="test" />
-              <span>label</span>
-            </div>
-          </div>
-          <a href="#" className="btn btn-disabled">
-            Sign Up
-          </a>
-        </div>
-      </section>
+      <SignUp/>
 
       <footer>
         <div className="footer__top">
