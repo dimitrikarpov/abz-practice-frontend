@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import classes from './Select.module.scss'
 import CaretIcon from '../../../assets/icons/caret-down.svg'
 
-const Select = ({ options, value, onChange }) => {
+const Select = ({ options, value, error, onChange }) => {
   const [visible, setVisible] = useState(false)
 
   const onSelect = id => {
@@ -19,6 +19,10 @@ const Select = ({ options, value, onChange }) => {
     ? [classes['options'], classes['visible']]
     : [classes['options']]
 
+  const inputFieldClasses = error
+    ? [classes['input-field'], classes['has-error']]
+    : [classes['input-field']]
+
   let activeItem = options.filter(item => item.id === value)[0]
 
   const getOptionClasses = id => {
@@ -28,7 +32,7 @@ const Select = ({ options, value, onChange }) => {
   }
 
   return (
-    <div className={classes['input-field']}>
+    <div className={inputFieldClasses.join(' ')}>
       <div className={classes['select-wrapper']}>
         <input
           className={classes['input']}
@@ -51,6 +55,9 @@ const Select = ({ options, value, onChange }) => {
         </ul>
       </div>
       <label className={classes['label']}>select</label>
+      <div className={classes['form-input__error-box']}>
+        <p className={classes['form-input__error']}>{error}</p>
+      </div>
     </div>
   )
 }
@@ -60,10 +67,12 @@ export default Select
 Select.defaultProps = {
   options: [],
   value: false,
+  error: false,
 }
 
 Select.propTypes = {
   options: PropTypes.array.isRequired,
   value: PropTypes.string,
+  error: PropTypes.string,
   onChange: PropTypes.func.isRequired,
 }

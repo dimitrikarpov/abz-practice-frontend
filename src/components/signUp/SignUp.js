@@ -8,13 +8,13 @@ class SignUp extends Component {
     positions: [],
   }
 
-//   async componentDidMount() {
-//     const res = await axios.get(
-//       'https://frontend-test-assignment-api.abz.agency/api/v1/positions',
-//     )
+  async componentDidMount() {
+    const res = await axios.get(
+      'https://frontend-test-assignment-api.abz.agency/api/v1/positions',
+    )
 
-//     this.setState({ positions: res.data.positions })
-//   }
+    this.setState({ positions: res.data.positions })
+  }
 
   handleSubmit = () => {
       // post request

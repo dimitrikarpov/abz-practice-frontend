@@ -3,7 +3,7 @@
   position: relative;
 }
 
-.form-input input {
+.form-input__input {
   border: 1px solid #b7b7b7;
   border-radius: 0.3rem;
   font-size: 2rem;
@@ -12,7 +12,7 @@
   color: #b7b7b7;
 }
 
-.form-input span {
+.form-input__label {
   position: absolute;
   top: 0.4rem;
   left: 1.7rem;
@@ -20,4 +20,30 @@
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   color: #b7b7b7;
+}
+
+.form-input__error-box {
+  height: 1.1rem;
+  margin-top: 0.5rem;
+  text-align: left;
+}
+
+.form-input__error {
+  color: red;
+  padding-left: 1rem;
+  display: none;
+}
+
+.has-error {
+  .form-input__input {
+    border-color: red;
+  }
+
+  .form-input__label {
+    color: red;
+  }
+
+  .form-input__error {
+    display: block;
+  }
 }

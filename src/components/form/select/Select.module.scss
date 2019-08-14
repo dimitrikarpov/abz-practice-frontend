@@ -11,7 +11,7 @@
 .input {
   min-width: 20rem;
   width: 100%;
-  border: 1px solid #B7B7B7;
+  border: 1px solid #b7b7b7;
   border-radius: 4px;
   padding: 0.5rem;
   font-size: 2rem;
@@ -31,7 +31,7 @@
   left: 2rem;
   background: #fff;
   padding: 0 0.3rem;
-  color: #B7B7B7;
+  color: #b7b7b7;
 }
 
 .options {
@@ -58,9 +58,35 @@
 }
 
 .active {
-  color: #F18022;
+  color: #f18022;
 }
 
 .option:hover {
   background-color: #fce2cc;
+}
+
+.form-input__error-box {
+  height: 1.1rem;
+  margin-top: 0.5rem;
+  text-align: left;
+}
+
+.form-input__error {
+  color: red;
+  padding-left: 1rem;
+  display: none;
+}
+
+.has-error {
+  .input {
+    border-color: red;
+  }
+
+  .label {
+    color: red;
+  }
+
+  .form-input__error {
+    display: block;
+  }
 }

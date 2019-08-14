@@ -63,32 +63,6 @@ p {
   line-height: 22px;
 }
 
-/* form */
-/** input **/
-// .form-input {
-//   padding: 1rem;
-//   position: relative;
-// }
-
-// .form-input input {
-//   border: 1px solid #b7b7b7;
-//   border-radius: 0.3rem;
-//   font-size: 2rem;
-//   padding: 0.7rem;
-//   width: 100%;
-//   color: #b7b7b7;
-// }
-
-// .form-input span {
-//   position: absolute;
-//   top: 0.4rem;
-//   left: 1.7rem;
-//   background-color: white;
-//   padding-left: 0.5rem;
-//   padding-right: 0.5rem;
-//   color: #b7b7b7;
-// }
-
 /* button */
 .btn {
   padding: 0.5rem 4rem;
@@ -98,7 +72,8 @@ p {
   font-family: Source Sans Pro;
   font-weight: 700;
   font-size: 2rem;
-  line-height: 60px;
+  border: none;
+  background-color: unset;
 }
 
 .btn-primary {
@@ -121,9 +96,10 @@ p {
   }
 }
 
-.btn-disabled {
+.btn:disabled {
   background-color: #d7d7d7;
   color: #8d8c8c;
+  cursor: not-allowed;
 }
 
 /* Desktop */

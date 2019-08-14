@@ -1,10 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import classnames from 'classnames'
 import './Upload.scss'
 
-const Upload = ({ name, value, onChange }) => {
+const Upload = ({ name, value, error, onChange }) => {
   return (
-    <label class="upload">
+    <label class={classnames("upload", {'has-error': error})}>
       <input
         type="file"
         class="upload__input"
@@ -18,6 +19,9 @@ const Upload = ({ name, value, onChange }) => {
         <div className="upload__wrapper--button">
           <div className="upload__button">Upload</div>
         </div>
+        <div className="form-input__error-box">
+          <p className="form-input__error">{error}</p>
+        </div>
       </div>
     </label>
   )
@@ -27,10 +31,12 @@ export default Upload
 
 Upload.defaultProps = {
   value: '',
+  error: false,
 }
 
 Upload.propTypes = {
   name: PropTypes.string.isRequired,
   value: PropTypes.string,
+  error: PropTypes.string,
   onChange: PropTypes.func.isRequired,
 }
