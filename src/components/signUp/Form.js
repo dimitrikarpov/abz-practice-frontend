@@ -4,6 +4,7 @@ import classnames from 'classnames'
 import Select from '../form/select/Select'
 import Input from '../form/input/Input'
 import Upload from '../form/upload/Upload'
+import Phone from '../form/phone/Phone'
 import { validate } from '../../helpers/validation'
 
 const getValidationErrors = ({ name, email, phone, position, photo }) => {
@@ -167,7 +168,7 @@ class Form extends Component {
               onChange={this.onChange}
               error={errors['email'] ? errors['email'] : false}
             />
-            <Input
+            <Phone
               name="phone"
               value={phone}
               label="phone"
