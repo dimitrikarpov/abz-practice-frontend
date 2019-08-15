@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import Form from './Form'
-import { Context } from '../../storage/token-context'
-import Notification from '../notification/Notification'
+import { Context } from '../../../storage/token-context'
+import Notification from '../../notification/Notification'
 
 const getFirstErrors = fails => {
   return Object.entries(fails).reduce((acc, item) => {

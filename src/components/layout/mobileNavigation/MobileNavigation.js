@@ -4,7 +4,7 @@ import './MobileNavigation.scss'
 import Portal from '../Portal'
 import UserInfo from '../userInfo/UserInfo'
 import Navigation from '../navigation/Navigation'
-import { UserConsumer } from '../../storage/user-context'
+import { UserConsumer } from '../../../storage/user-context'
 
 const MobileNavigation = ({ visible, onClose }) => {
   const handleOnClose = () => {

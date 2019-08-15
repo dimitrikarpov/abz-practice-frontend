@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
-import Select from '../form/select/Select'
-import Input from '../form/input/Input'
-import Upload from '../form/upload/Upload'
-import Phone from '../form/phone/Phone'
-import { validate } from '../../helpers/validation'
+import Select from '../../form/select/Select'
+import Input from '../../form/input/Input'
+import Upload from '../../form/upload/Upload'
+import Phone from '../../form/phone/Phone'
+import { validate } from '../../../helpers/validation'
 
 const getValidationErrors = ({ name, email, phone, position, photo }) => {
   const errors = {}

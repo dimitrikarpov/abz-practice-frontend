@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import './UserInfo.scss'
-import SuperstarAvatar from '../../assets/imgs/user-superstar-2x.jpg'
-import SignOutIcon from '../../assets/icons/sign-out.svg'
+import SuperstarAvatar from '../../../assets/imgs/user-superstar-2x.jpg'
+import SignOutIcon from '../../../assets/icons/sign-out.svg'
 
 const UserInfo = ({ name, email, avatar }) => {
   return (

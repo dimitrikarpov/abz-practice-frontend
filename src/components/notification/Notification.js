@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Portal from '../Portal'
+import Portal from '../layout/Portal'
 import './Notification.scss'
 
 const Notification = ({ visible, title, message, onClose }) => {
