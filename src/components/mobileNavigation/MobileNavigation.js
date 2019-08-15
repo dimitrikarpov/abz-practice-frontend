@@ -4,6 +4,7 @@ import './MobileNavigation.scss'
 import Portal from '../Portal'
 import UserInfo from '../userInfo/UserInfo'
 import Navigation from '../navigation/Navigation'
+import { UserConsumer } from '../../storage/user-context'
 
 const MobileNavigation = ({ visible, onClose }) => {
   const handleOnClose = () => {
@@ -17,7 +18,18 @@ const MobileNavigation = ({ visible, onClose }) => {
           <div className="backdrop" onClick={handleOnClose}>
             <div className="side-drawer">
               <div className="side-drawer__user">
-                  <UserInfo/>
+                <UserConsumer>
+                  {value => {
+                    const { user } = value
+                    return (
+                      <UserInfo
+                        name={user.name}
+                        email={user.email}
+                        avatar={user.photo}
+                      />
+                    )
+                  }}
+                </UserConsumer>
               </div>
               <div className="side-drawer__nav">
                 <Navigation variant="vertical" />

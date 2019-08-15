@@ -16,9 +16,9 @@ import TwitterIcon from './assets/icons/twitter.svg'
 import MenuIcon from './assets/icons/line-menu.svg'
 import Navigation from './components/navigation/Navigation'
 import MobileNavigation from './components/mobileNavigation/MobileNavigation'
+import { UserConsumer } from './storage/user-context'
 import UserInfo from './components/userInfo/UserInfo'
 import SignUp from './components/signUp/SignUp'
-
 import Notification from './components/notification/Notification'
 
 function App() {
@@ -33,7 +33,12 @@ function App() {
       <header>
         <img className="header__logo" src={HeaderLogo} alt="logo" />
         <Navigation />
-        <UserInfo />
+        <UserConsumer>
+          {value => {
+            const { user } = value
+            return <UserInfo name={user.name} email={user.email} avatar={user.photo} />
+          }}
+        </UserConsumer>
         <img
           src={MenuIcon}
           className="nav-icon"

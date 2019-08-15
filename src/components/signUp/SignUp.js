@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { PositionsConsumer } from '../../storage/positions-context'
 import axios from 'axios'
 import Form from './Form'
 
