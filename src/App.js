@@ -4,7 +4,6 @@ import AboutImg from './assets/imgs/man-mobile.svg'
 import JSImage from './assets/imgs/javascript.svg'
 import CSSImage from './assets/imgs/css.svg'
 import HTMLImage from './assets/imgs/html.svg'
-import UserElizImage from './assets/imgs/user-elizabeth-2x.jpg'
 import MailIcon from './assets/icons/mail.svg'
 import PhoneIcon from './assets/icons/phone.svg'
 import MobileIcon from './assets/icons/cellphone.svg'
@@ -19,6 +18,7 @@ import MobileNavigation from './components/mobileNavigation/MobileNavigation'
 import { UserConsumer } from './storage/user-context'
 import UserInfo from './components/userInfo/UserInfo'
 import SignUp from './components/signUp/SignUp'
+import UsersSection from './components/sections/users/UsersSection'
 
 function App() {
   const [sideDraw, setSideDraw] = useState(false)
@@ -164,69 +164,7 @@ function App() {
         </div>
       </section>
 
-      <section id="users">
-        <h2>Our cheerful users</h2>
-        <h5>Attention! Sorting users by registration date</h5>
-        <div className="users-grid">
-          <div className="users__card">
-            <img src={UserElizImage} alt="user" />
-            <div className="user__info">
-              <h4>Elizabeth</h4>
-              <p>Leading specialist of the Control Department</p>
-              <p>noah.controldepartment@gmail...</p>
-              <p>+38 (095) 924 66 37</p>
-            </div>
-          </div>
-          <div className="users__card">
-            <img src={UserElizImage} alt="user" />
-            <div className="user__info">
-              <h4>Elizabeth</h4>
-              <p>Leading specialist of the Control Department</p>
-              <p>noah.controldepartment@gmail...</p>
-              <p>+38 (095) 924 66 37</p>
-            </div>
-          </div>
-          <div className="users__card">
-            <img src={UserElizImage} alt="user" />
-            <div className="user__info">
-              <h4>Elizabeth</h4>
-              <p>Leading specialist of the Control Department</p>
-              <p>noah.controldepartment@gmail...</p>
-              <p>+38 (095) 924 66 37</p>
-            </div>
-          </div>
-          <div className="users__card">
-            <img src={UserElizImage} alt="user" />
-            <div className="user__info">
-              <h4>Elizabeth</h4>
-              <p>Leading specialist of the Control Department</p>
-              <p>noah.controldepartment@gmail...</p>
-              <p>+38 (095) 924 66 37</p>
-            </div>
-          </div>
-          <div className="users__card">
-            <img src={UserElizImage} alt="user" />
-            <div className="user__info">
-              <h4>Elizabeth</h4>
-              <p>Leading specialist of the Control Department</p>
-              <p>noah.controldepartment@gmail...</p>
-              <p>+38 (095) 924 66 37</p>
-            </div>
-          </div>
-          <div className="users__card">
-            <img src={UserElizImage} alt="user" />
-            <div className="user__info">
-              <h4>Elizabeth</h4>
-              <p>Leading specialist of the Control Department</p>
-              <p>noah.controldepartment@gmail...</p>
-              <p>+38 (095) 924 66 37</p>
-            </div>
-          </div>
-        </div>
-        <a href="#" className="btn btn-secondary">
-          Show more
-        </a>
-      </section>
+          <UsersSection />
 
       <SignUp />
 
