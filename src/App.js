@@ -19,7 +19,6 @@ import MobileNavigation from './components/mobileNavigation/MobileNavigation'
 import { UserConsumer } from './storage/user-context'
 import UserInfo from './components/userInfo/UserInfo'
 import SignUp from './components/signUp/SignUp'
-import Notification from './components/notification/Notification'
 
 function App() {
   const [sideDraw, setSideDraw] = useState(false)
@@ -306,12 +305,6 @@ function App() {
       </footer>
 
       <MobileNavigation visible={sideDraw} onClose={toggleSideDraw} />
-      <Notification
-        visible={false}
-        title="Congratulations"
-        message="You have succefully passed the registration"
-        onClose={() => true}
-      />
     </div>
   )
 }

@@ -73,8 +73,13 @@ class Form extends Component {
     isFormFilled: false,
   }
 
+  static getDerivedStateFromProps(props, state) {
+    return { errors: { ...props.errors } }
+  }
+
   handleSubmit = () => {
     const { name, email, phone, position, photo } = this.state
+    const { onSubmit } = this.props
 
     const errors = getValidationErrors({ name, email, phone, position, photo })
 
@@ -93,9 +98,9 @@ class Form extends Component {
         isFormFilled: false,
       })
     } else {
-      // this.props.onSubmit(this.state)
       // TODO: clear form
       this.setState({ errors: {} })
+      onSubmit(this.state)
     }
   }
 
@@ -192,7 +197,7 @@ class Form extends Component {
             />
           </div>
           <button
-            className={classnames("btn", {'btn-primary': isFormFilled})}
+            className={classnames('btn', { 'btn-primary': isFormFilled })}
             onClick={this.handleSubmit}
             disabled={!isFormFilled}
           >
@@ -213,4 +218,5 @@ Form.defaultProps = {
 Form.propTypes = {
   positions: PropTypes.array.isRequired,
   onSubmit: PropTypes.func.isRequired,
+  errors: PropTypes.object,
 }
