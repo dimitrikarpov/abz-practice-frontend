@@ -1,0 +1,47 @@
+/* ----------- TABLET -------------*/
+/* from 770px to 1024px */
+
+@media (min-width: 770px) and (max-width: 1023px) {
+  /* typography */
+  h1 {
+    font-size: 42px;
+    line-height: 51px;
+  }
+
+  h2 {
+    font-size: 42px;
+    line-height: 51px;
+  }
+
+  h3 {
+    font-size: 26px;
+    line-height: 31px;
+  }
+
+  h4 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  h5 {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .App {
+    background-color: red;
+  }
+
+  /* header */
+  header {
+    nav {
+      width: 48.4rem;
+      margin-left: 6.7rem;
+    }
+  }
+}
