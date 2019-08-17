@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/abz-practice-frontend/static/css/main.46200b42.chunk.css",
+    "main.js": "/abz-practice-frontend/static/js/main.a5e60958.chunk.js",
+    "main.js.map": "/abz-practice-frontend/static/js/main.a5e60958.chunk.js.map",
+    "runtime~main.js": "/abz-practice-frontend/static/js/runtime~main.c4480a34.js",
+    "runtime~main.js.map": "/abz-practice-frontend/static/js/runtime~main.c4480a34.js.map",
+    "static/js/2.76146b25.chunk.js": "/abz-practice-frontend/static/js/2.76146b25.chunk.js",
+    "static/js/2.76146b25.chunk.js.map": "/abz-practice-frontend/static/js/2.76146b25.chunk.js.map",
+    "index.html": "/abz-practice-frontend/index.html",
+    "precache-manifest.4cb065e69183784f0e67e75f31d4f0a4.js": "/abz-practice-frontend/precache-manifest.4cb065e69183784f0e67e75f31d4f0a4.js",
+    "service-worker.js": "/abz-practice-frontend/service-worker.js",
+    "static/css/main.46200b42.chunk.css.map": "/abz-practice-frontend/static/css/main.46200b42.chunk.css.map",
+    "static/media/index.scss": "/abz-practice-frontend/static/media/man-laptop-v2.1097427c.svg",
+    "static/media/caret-down.svg": "/abz-practice-frontend/static/media/caret-down.120ef998.svg",
+    "static/media/cellphone.svg": "/abz-practice-frontend/static/media/cellphone.1a0fe3e3.svg",
+    "static/media/css.svg": "/abz-practice-frontend/static/media/css.29637879.svg",
+    "static/media/facebook.svg": "/abz-practice-frontend/static/media/facebook.20caa7d0.svg",
+    "static/media/html.svg": "/abz-practice-frontend/static/media/html.d882d855.svg",
+    "static/media/instagram.svg": "/abz-practice-frontend/static/media/instagram.f263dbf1.svg",
+    "static/media/javascript.svg": "/abz-practice-frontend/static/media/javascript.cf53a810.svg",
+    "static/media/line-menu.svg": "/abz-practice-frontend/static/media/line-menu.3b500131.svg",
+    "static/media/linkedin.svg": "/abz-practice-frontend/static/media/linkedin.569eb74a.svg",
+    "static/media/mail.svg": "/abz-practice-frontend/static/media/mail.ae7e47dd.svg",
+    "static/media/man-mobile.svg": "/abz-practice-frontend/static/media/man-mobile.2afa7771.svg",
+    "static/media/phone.svg": "/abz-practice-frontend/static/media/phone.ca2f60a3.svg",
+    "static/media/pinterest.svg": "/abz-practice-frontend/static/media/pinterest.603e7eb0.svg",
+    "static/media/sign-out.svg": "/abz-practice-frontend/static/media/sign-out.a9a773c4.svg",
+    "static/media/twitter.svg": "/abz-practice-frontend/static/media/twitter.3e993ec3.svg",
+    "static/media/user-elizabeth-2x.jpg": "/abz-practice-frontend/static/media/user-elizabeth-2x.1d5a793f.jpg",
+    "static/media/user-superstar-2x.jpg": "/abz-practice-frontend/static/media/user-superstar-2x.0592ecbe.jpg"
+  }
+}
